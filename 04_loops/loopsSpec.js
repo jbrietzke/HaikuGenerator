@@ -47,19 +47,6 @@ describe("Looping over nested Loops", function(){
   it("creates a grid with 2 columns and rows when input is 2", function(){
     expect(gridGenerator(2)).toEqual("# \n #\n")
   });
-
-  // Research what a Primitive Pythagorean Triplet is.
-  // Looking for a "p triplet" any triplet containing a GCD (Greatest Common Divisor) = 1
-  // The largest value is where "b" is the second largest value.
-  it("finds the largest Pythagorean Triplet of a given value and returns an array of the Triplet", function(){
-    expect(largestTriplet(25)).toEqual([7,24,25]); // [15,20,25]==> GCD = 5: [3,4,5]
-  });
-  it("finds the largest Pythagorean Triplet of a given value", function(){
-    expect(largestTriplet(65)).toEqual([16,63,65]);
-  });
-  it("finds the largets Pythagorean Triplet within 'n' (aka the number argument passed)", function(){
-    expect(largestTriplet(66)).toEqual([16,63,65]);
-  })
 });
 
 describe("More looping over arrays", function() {
