@@ -14,7 +14,7 @@ describe('factorial', function() {
       expect(result).toEqual(expected);
     });
     it('never calls itself', function() {
-      spyOn(window, 'factorialIterative');
+      spyOn(window, 'factorialIterative').and.callThrough();
       factorialIterative(5);
       expect(factorialIterative.calls.count()).toEqual(1);
     });
