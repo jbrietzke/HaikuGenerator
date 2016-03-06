@@ -83,21 +83,21 @@ describe("once", function() {
 // the same value and can both read and modify it.
 describe("Shared contexts", function() {
   it("should return an object with two functions", function() {
-    var sharedObj = createObjectWithTwoClosures();
+    var sharedObj = createObjectWithClosures();
     expect(typeof sharedObj.oneIncrementer).toBe("function");
     expect(typeof sharedObj.tensIncrementer).toBe("function");
     expect(typeof sharedObj.getValue).toBe("function");
     // Here we're testing that you're not storing anything
     // besides these three functions.  The value that will 
     // be incremented/decremented (and returned by getValue)
-    // should be only in scope during the createObjectWithTwoClosures function call and then
+    // should be only in scope during the createObjectWithClosures function call and then
     // closed over by the three functions returned in the object
     expect(Object.keys(sharedObj).length).toBe(3);
   });
 
 
   it('should let two functions call the same value', function() {
-    var sharedObj = createObjectWithTwoClosures();
+    var sharedObj = createObjectWithClosures();
     sharedObj.oneIncrementer();
     sharedObj.tensIncrementer();
     expect(sharedObj.getValue()).toEqual(11);
