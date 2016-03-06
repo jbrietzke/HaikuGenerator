@@ -6,12 +6,12 @@
 // actually an array).  
 describe("The arguments array", function() {
   it("allows you to call a function with arguments like normal", function() {
-    var result = concat_string("David", " ", "Yang");
+    var result = concatString("David", " ", "Yang");
     expect(result).toEqual("David Yang");
   });
 
   it("allows you to call a function with as many arguments as you want", function() {
-    var result = concat_string("This", " ", "should", " ", "be done with join");
+    var result = concatString("This", " ", "should", " ", "be done with join");
     expect(result).toEqual("This should be done with join");
   });
 });
