@@ -3,7 +3,7 @@
 
 ###Overview
 
-The proper workflow (and best practice) for TDD(Test Driven Development) is to first write tests, then create the code that passes the tests.  To become familiar with reading tests, we are taking an oppossite approach for the first series of tests in TestFirst. 
+The proper workflow (and best practice) for TDD(Test Driven Development) is to first write tests, then create the code that passes the tests.  To become familiar with reading tests, we are taking an opposite approach for the first series of tests in TestFirst. 
 
 <hr>
 
