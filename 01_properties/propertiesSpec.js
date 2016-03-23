@@ -86,8 +86,8 @@ describe("Properties on a Function Object", function() {
   });
 
   describe("setPropertiesOnFunctionObj", function() {
-    it("sets year to 2015", function() {
-      expect(functionObject.year).toEqual(2015);
+    it("sets year to 2016", function() {
+      expect(functionObject.year).toEqual(2016);
     });
 
     it("sets `divideByTwo` to a function that accepts a number and returns the value divided by two ", function() {
