@@ -150,7 +150,7 @@ describe('stringify', function() {
   // type function on stringify's input.
   ///
   it('invokes our custom "type" function', function() {
-    spyOn(window, 'type');
+    spyOn(window, 'type').and.callThrough();
     stringify(null);
     expect(type).toHaveBeenCalled();
   });
