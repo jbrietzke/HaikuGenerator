@@ -14,6 +14,7 @@ describe("Properties on Object Literal", function() {
     setPropertiesOnObjLiteral(object);
   });
 
+
   describe("setPropertiesOnObjLiteral", function() {
     it("sets x to 7", function() {
       expect(object.x).toEqual(7);
